@@ -1,5 +1,16 @@
 .instagram-feed{
     padding: 100px 0;
+    .instafeed-box{
+        @media screen and (min-width: 768px) and (max-width: 991px){
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 768px){
+            img{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
     .btn-section{
         margin-top: 50px;
         a{

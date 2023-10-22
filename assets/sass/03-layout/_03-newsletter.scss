@@ -1,10 +1,19 @@
 .news-section{
     background: #ddd;
     padding: 72px 0;
+    @media screen and (max-width: 640px){
+    padding: 40px 0;
+      
+    }
 
     .sec-title{
       display: inline-flex;
       width: 36%;
+      @media screen and (max-width: 640px){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       .title{
         color: $title-color;
         text-transform: capitalize;
@@ -14,6 +23,11 @@
         font-weight: $regular;
         line-height: 40px;
         margin-bottom: 46px;
+        @media screen and (max-width: 640px){
+          font-size: 25px;
+          line-height: 35px;
+          margin-bottom: 30px;
+        }
       }
     }
     .news-wrapper{
@@ -22,26 +36,46 @@
       background: #fff;
       display: inline-flex;
       width: 67%;
-      input[type="email"] {
-        display: inline-block;
-        padding: 18px 20px;
-        box-sizing: border-box;
-        border: none;
-        background: transparent;
+      @media screen and (max-width: 640px){
+        width: 100%;
+      }
+     
+      form{
+        width: 100%;
+        input[type="email"] {
+          display: inline-block;
+          padding: 18px 20px;
+          @media screen and (max-width: 640px){
+            padding: 13px 20px;
+          }
+          width: 67%;
+          box-sizing: border-box;
+          border: none;
+          background: transparent;
+          width: 100%;
+        }
+        input,
+        input::-webkit-input-placeholder {
+          line-height: 3;
+          color: $title-color;
+          font-family: $vidaloka ;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; 
+        }
+
+      }
       
-      }
-      input,
-      input::-webkit-input-placeholder {
-        line-height: 3;
-        color: $title-color;
-        font-family: $vidaloka ;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; 
-      }
       
       .bt {
+        @media screen and (max-width: 640px){
+          width: 100%;
+          right: 0;
+          left: 0;
+          top: unset;
+          bottom: -60px;
+        }
         position: absolute;
         right: 5px;
         top: 5px;
@@ -62,5 +96,8 @@
     }
     .notice{
       margin-top: 20px;
+      @media screen and (max-width: 640px){
+        margin-top: 90px;
+      }
     }
 }

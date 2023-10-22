@@ -41,6 +41,11 @@
                         line-height: 40px;
                         font-family: var(--vidaloka);
                         margin-bottom: 12px;
+                        @media screen and (max-width: 767px){
+                            font-size: 25px;
+                            line-height: 33px;
+                            margin-bottom: 10px;
+                        }
                     }
                     h5{
                         font-size: 12px; 
