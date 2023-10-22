@@ -1,0 +1,80 @@
+.profile-section{
+    padding: 55px 0;
+    background: #DDDDDD;
+    .profile-container{
+        padding: 0 115px;
+        @media screen and (min-width: 768px) and (max-width: 991px){
+            padding: 0 50px;
+        }
+        @media screen and (min-width: 600px) and (max-width: 767px){
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 599px){
+            flex-direction: column;
+            padding: 0;
+        }
+        .profile-img{
+            width: 500px;
+            height: auto;
+            img{
+                border-radius: 50%;
+            }
+        }
+        .profile-content{
+            padding-left: 30px;
+            @media screen and (max-width: 599px){
+                padding-left: 0;
+                padding-top: 20px;
+            }
+            position: relative;
+            .name{
+                h4{
+                    color: $title-color;
+                    font-family: $vidaloka ;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: $medium;
+                    line-height: 48px; /* 133.333% */
+                }
+            }
+            .desc{
+                margin: 5px 0;
+                p{
+                    color: $title-color;
+                    font-family: $montserrat;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: $medium;
+                    line-height: 26px;
+                    span{
+                        
+                        font-weight: $semi-bold;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .social-sec{
+                ul {
+                    li{
+                        padding: 10px 20px 10px 0px ;
+                    }
+                }
+            }
+            .number-of-posts{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                @media screen and (max-width: 599px){
+                    bottom: -20px;
+                }
+                span{
+                    font-family: $montserrat;
+                    font-size: 13px;
+                    color: $title-color;
+                    font-weight: $medium;
+                }
+                
+            }
+        }
+    }
+}

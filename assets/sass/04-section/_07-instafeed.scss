@@ -1,0 +1,19 @@
+.instagram-feed{
+    padding: 100px 0;
+    .btn-section{
+        margin-top: 50px;
+        a{
+            padding: 15px 30px;
+            background: $title-color;
+            color: #fff;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: $medium;
+            line-height: 20px; 
+        }
+    }
+}

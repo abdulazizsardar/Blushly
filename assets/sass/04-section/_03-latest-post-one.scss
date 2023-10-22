@@ -1,0 +1,210 @@
+// Latest Post
+.latest-post-part{
+    padding: 30px 0 140px;
+    .latest-blog-box{
+        .blog-img{
+            position: relative;
+            .blog-content{
+                position: absolute;
+                text-align: center;
+                background: #fff;
+                border: 1px solid $title-color;
+                left: 30px;
+                right: 30px;
+                padding: 10px 20px;
+                bottom: -78px;
+                .blog-cat{
+                    .post-categories{
+                        display: flex;
+                        justify-content: center;
+                        gap: 15px;
+                        a{
+                            text-transform: uppercase;
+                            border-bottom: 1px solid $title-color;
+                            font-size: 12px;
+                            color: $title-color;
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            letter-spacing: 1.92px;
+                        }
+                    }
+                    
+                }
+                .blog-title-sec{
+                    margin: 5px 0;
+                    .blog-title{
+                        color: $title-color;
+                        text-align: center;
+                        font-family: $vidaloka;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: $regular;
+                        line-height: 28px; /* 116.667% */
+                    }
+                }
+                .blog-meta{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    a{
+                        color: #838383;
+                        font-family: $montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: $regular;
+                        line-height: 18px;
+                        span{
+                            font-weight: $medium;
+                        }
+                    }
+                    .b-date{
+                        color: #838383;
+                        font-family: $montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: $regular;
+                        line-height: 18px; /* 150% */
+                    }
+                }
+            }
+        }
+        &:last-child{
+            @media screen and (min-width: 768px) and (max-width: 991px){
+                margin-top: 105px;
+            }
+        }
+        
+        @media screen and (max-width: 767px){
+            margin-top: 105px;
+            .blog-img{
+                .blog-content{
+                    right: 20px;
+                    left: 20px;
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width: 767px){
+            padding: 0 0 100px 0;
+            margin-bottom:-70px ;
+    }
+}
+
+
+// Sticky Post
+.sticky-post{
+    padding: 30px 0 140px;
+    @media screen and (max-width: 767px){
+        margin-top: 100px;
+    }
+    @media screen and (max-width: 499px){
+        padding: 30px 0 260px;
+    }
+    .latest-blog-box{
+        .blog-img{
+            position: relative;
+            .blog-content{
+                position: absolute;
+                text-align: center;
+                background: #fff;
+                border: 1px solid $title-color;
+                left: 120px;
+                right: 120px;
+                padding: 30px 101px;
+                @media screen and (min-width: 768px) and (max-width: 991px){
+                    left: 60px;
+                    right: 60px;
+                    padding: 30px 40px;
+                }
+                @media screen and (min-width: 500px) and (max-width: 767px){
+                    left: 20px;
+                    right: 20px;
+                    padding: 20px;
+                }
+                @media screen and (max-width: 499px){
+                    left: 10px;
+                    right: 10px;
+                    padding: 10px;
+                    bottom: -220px;
+
+                }
+                bottom: -78px;
+                .blog-cat{
+                    .post-categories{
+                        display: flex;
+                        justify-content: center;
+                        gap: 15px;
+                        a{
+                            text-transform: uppercase;
+                            border-bottom: 1px solid $title-color;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                }
+                .blog-title-sec{
+                    margin: 20px 0;
+                    .blog-title{
+                        color: $title-color;
+                        text-align: center;
+                        font-family: $vidaloka;
+                        font-size: 32px;
+                        line-height: 40px; /* 125% */
+                        font-style: normal;
+                        font-weight: $regular;
+                        @media screen and (max-width: 767px){
+                            font-size: 22px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+                .blog-desc{
+                    margin-bottom: 20px;
+                    padding: 0 62px;
+                    @media screen and (max-width: 767px){
+                        padding: 0;
+                    }
+                    
+                    p{
+                        color: #000;
+                        text-align: center;
+                        font-family: $montserrat;
+                        font-size: 14px;
+                        font-weight: $regular;
+                        line-height: 20px;
+                    }
+                }
+                .blog-meta{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    a{
+                        color: #838383;
+                        font-family: $montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: $regular;
+                        line-height: 18px;
+                        span{
+                            font-weight: $medium;
+                        }
+                    }
+                    .b-date{
+                        color: #838383;
+                        font-family: $montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: $regular;
+                        line-height: 18px; /* 150% */
+                    }
+                }
+            }
+        }
+    }
+}
+

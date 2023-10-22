@@ -1,0 +1,185 @@
+.random-posts{
+    .posts-inner{
+        .posts-item{
+            position: relative;
+            padding: 48px 0;
+            &:nth-child(odd){
+                .img-sec{
+                    flex: 0 0 55%;
+                    max-width: 55%;
+                }
+                .content-sec{
+                    flex: 0 0 61%;
+                    max-width: 61%;
+                    border: 1px solid #000;
+                    padding: 50px 40px 60px 40px; 
+                    position: absolute;
+                    background: #fff;
+                    right: 0;
+                    .blog-cat{
+                        a{
+                            text-transform: uppercase;
+                            border-bottom: 1px solid $title-color;
+                            font-size: 12px;
+                            color: $title-color;
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            letter-spacing: 1.92px;
+                        }
+                    }
+                    .blog-title-sec{
+                        margin: 15px 0;
+                        .blog-title{
+                            color: $title-color;
+                            font-family: $vidaloka;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 40px; /* 116.667% */
+                        }
+                    }
+                    .blog-desc{
+                        margin-right: 30px;
+                        p{
+                            color: $title-color;
+                            font-family: $montserrat;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            margin-bottom: 30px;
+                        }
+                        
+                    }
+                    .blog-meta{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 10px;
+                        a{
+                            color: #838383;
+                            font-family: $montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 18px;
+                            span{
+                                font-weight: $medium;
+                            }
+                        }
+                        .b-date{
+                            color: #838383;
+                            font-family: $montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 18px; /* 150% */
+                        }
+                    }
+                }
+            }
+            
+            &:nth-child(even){
+              flex-direction: row-reverse;
+                .img-sec{
+                    flex: 0 0 55%;
+                    max-width: 55%;
+                }
+                .content-sec{
+                    flex: 0 0 61%;
+                    max-width: 61%;
+                    border: 1px solid #000;
+                    padding: 50px 40px 60px 40px; 
+                    position: absolute;
+                    background: #fff;
+                    left: 0;
+                    .blog-cat{
+                        a{
+                            text-transform: uppercase;
+                            border-bottom: 1px solid $title-color;
+                            font-size: 12px;
+                            color: $title-color;
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            letter-spacing: 1.92px;
+                        }
+                    }
+                    .blog-title-sec{
+                        margin: 15px 0;
+                        .blog-title{
+                            color: $title-color;
+                            font-family: $vidaloka;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 40px; /* 116.667% */
+                        }
+                    }
+                    .blog-desc{
+                        margin-right: 30px;
+                        p{
+                            color: $title-color;
+                            font-family: $montserrat;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            margin-bottom: 30px;
+                        }
+                        
+                    }
+                    .blog-meta{
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 10px;
+                        a{
+                            color: #838383;
+                            font-family: $montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 18px;
+                            span{
+                                font-weight: $medium;
+                            }
+                        }
+                        .b-date{
+                            color: #838383;
+                            font-family: $montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 18px; /* 150% */
+                        }
+                    }
+                }
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                border-top: 1px dashed $title-color;
+               bottom: 0;
+            }
+        }
+    }
+    .lm-btn{
+        margin-top: 105px;
+        a{
+            background: $title-color;
+            color: #fff;
+            padding: 15px 60px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $montserrat;
+
+        }
+    }
+}

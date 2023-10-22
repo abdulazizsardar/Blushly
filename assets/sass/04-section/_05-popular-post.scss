@@ -1,0 +1,98 @@
+// Latest Post
+.popular-post{
+    padding: 0 0 140px;
+    .popular-post-wrapper{
+
+        .popular-blog-box{
+            .blog-img{
+                position: relative;
+                .blog-content{
+                    position: absolute;
+                    text-align: center;
+                    background: #fff;
+                    border: 1px solid $title-color;
+                    left: 30px;
+                    right: 30px;
+                    padding: 10px 30px;
+                    bottom: -78px;
+                    @media screen and (max-width: 1100px){
+                        left: 20px;
+                        right: 20px;
+                    }
+                    @media screen and (max-width: 767px){
+                        padding: 10px 20px;
+                    }
+                    .blog-cat{
+                        .post-categories{
+                            display: flex;
+                            justify-content: center;
+                            gap: 15px;
+                            a{
+                                text-transform: uppercase;
+                                border-bottom: 1px solid $title-color;
+                                font-size: 12px;
+                                color: $title-color;
+                                text-align: center;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                letter-spacing: 1.92px;
+                            }
+                        }
+                    }
+                    .blog-title-sec{
+                        margin: 5px 0;
+                        .blog-title{
+                            color: $title-color;
+                            text-align: center;
+                            font-family: $vidaloka;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 28px; /* 116.667% */
+                        }
+                    }
+                    .blog-meta{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        a{
+                            color: #838383;
+                            font-family: $montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 18px;
+                            span{
+                                font-weight: $medium;
+                            }
+                        }
+                        .b-date{
+                            color: #838383;
+                            font-family: $montserrat;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: $regular;
+                            line-height: 18px; /* 150% */
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 991px){
+                &:last-child{
+                    margin-top: 105px;
+                }
+            }
+            @media screen and (max-width: 767px){
+                margin-top: 105px;
+            }
+        }
+        @media screen and (max-width: 991px){
+            .two-column-part{
+                padding-top: 0;
+            }
+        }
+    }
+    
+}

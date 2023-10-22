@@ -1,0 +1,91 @@
+/* Banner Part */
+#banner-part{
+    @media (min-width:576px) {
+        padding-top: 88.6px;
+    }
+    .banner-slider{
+        .slide-item{
+            background: url(../img/Image.png) no-repeat center/cover;
+            padding-block: 117px;
+            @media (max-width: 575px) {
+                padding-block: 60px;
+            }
+            .main{
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 93px;
+                @media (max-width: 767px) {
+                    padding-right: 0;
+                }
+                .info-box{
+                    padding: 41px 57px;
+                    max-width: 480px;
+                    border: 1px solid var(--white);
+                    color: var(--white);
+                    font-family: var(--montserrat);
+                    @media (max-width: 575px) {
+                        padding: 30px;
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: 1.92px;
+                        display: inline-block;
+                        padding-bottom: 2px;
+                        border-bottom: 1px solid var(--white);
+                        margin-bottom: 16px;
+
+                    }
+                    h1{
+                        font-size: 32px;
+                        line-height: 40px;
+                        font-family: var(--vidaloka);
+                        margin-bottom: 12px;
+                    }
+                    h5{
+                        font-size: 12px; 
+                        margin-bottom: 29px;
+                    }
+                    a{
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: 12px;
+                        gap: 6px;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid var(--white);
+                        &:hover{
+                            color: var(--white);
+                        }
+
+                    }
+                }
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            margin: -20px 0px 0px 0px;
+            z-index: 10;
+            font-size: 0;
+            width: 32px;
+            height: 32px;
+            @media (max-width: 767px) {
+                display: none;
+            }
+          }
+          .slick-arrow.slick-prev {
+            left: 112px;
+            background: url("../img/Vector.png") no-repeat;
+            @media (max-width: 1200px) {
+                left: 10px;
+            }
+          }
+          .slick-arrow.slick-next {
+            right: 112px;
+            background: url("../img/Vector\(1\).png") no-repeat;
+            @media (max-width: 1200px) {
+                right: 10px;
+            }
+          }
+    }
+}
