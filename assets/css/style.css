@@ -1747,6 +1747,11 @@ footer .footer-bottom p {
   width: 500px;
   height: auto;
 }
+@media screen and (max-width: 599px) {
+  .profile-section .profile-container .profile-img {
+    width: auto;
+  }
+}
 .profile-section .profile-container .profile-img img {
   border-radius: 50%;
 }
